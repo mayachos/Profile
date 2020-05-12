@@ -14,26 +14,64 @@ class ViewController: UIViewController {
     @IBOutlet var profileImageView: UIImageView!
     
     // ラベルを表示する変数
+    @IBOutlet var profileLabel: UILabel!
+    
+    // ラベルを表示する変数
     @IBOutlet var profileCommentLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        // 画像が見えない状態
-        profileImageView.isHidden = true
-        
-        // ラベルが見えない状態
-        profileCommentLabel.isHidden = true
     }
     
     // ボタンタップ
     @IBAction func tapButton1 () {
-        // 画像表示
-        profileImageView.isHidden = false
+
+        // 画像をImageViewに反映
+        profileImageView.image = UIImage(named: "philImage")
         
-        // ラベル表示
-        profileCommentLabel.isHidden = false
+        // ラベルをLabelに反映
+        profileLabel.text = "名前"
+        
+        // コメントをLabelに反映
+        profileCommentLabel.text = "iPhoneメンターのフィルだよ"
+    }
+    
+    @IBAction func tapButton2() {
+        
+        // 画像をImageViewに反映
+        profileImageView.image = UIImage(named: "trackImage")
+        
+        // ラベルをLabelに反映
+        profileLabel.text = "スポーツ"
+        
+        // コメントをLabelに反映
+        profileCommentLabel.text = "陸上競技が好きで、走り幅跳びが得意"
+    }
+    
+    @IBAction func tapButton3() {
+        
+        // 画像をImageViewに反映
+        profileImageView.image = UIImage(named: "appleImage")
+        
+        // ラベルをLabelに反映
+        profileLabel.text = "好きな食べ物"
+        
+        // コメントをLabelに反映
+        profileCommentLabel.text = "リンゴが好きで、いつも持ち歩いている"
+    }
+    
+    @IBAction func tapButton4() {
+        
+        // 画像をImageViewに反映
+        profileImageView.image = UIImage(named: "flightImage")
+        
+        // ラベルをLabelに反映
+        profileLabel.text = "趣味"
+        
+        // コメントをLabelに反映
+        profileCommentLabel.text = "飛行機に乗って、空を散歩すること"
     }
 
 
